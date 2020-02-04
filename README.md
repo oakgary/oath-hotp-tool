@@ -16,7 +16,7 @@ Select if you want your OTPs to be copied to your clipboard or just logged into 
 * config.json 
 ```
 {
-    "shouldCopyToClipboard": true,
+    "shouldCopyToClipboard": true
 }
 ```
 
