@@ -5,7 +5,7 @@
 
 <p align="center">
 <b>Manage HMAC-based One-time Passwords like Googles Authenticator App (F2A)</b><br>
-<sub>but within the terminal of your choice.</sub>
+<sub>within the terminal of your choice.</sub>
 </p>
 
 <br>
@@ -15,6 +15,13 @@
 </p>
 
 <br>
+
+<p align="center">
+<b>Your master password is hashed as 512bytes based on a random 128byte salt and sha512 digest and</b><br>
+<b>your OTP secrets is encrypted based on your master password, a random 16byte iv and sha256 digest</b><br>
+<sub>and stored in your config.json using NodeJs native crypto methods.</sub>
+</p>
+
 <br>
 
 ## Setup
