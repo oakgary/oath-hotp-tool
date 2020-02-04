@@ -17,9 +17,9 @@
 <br>
 
 <p align="center">
-<b>Your master password is hashed as 512bytes based on a random 128byte salt and sha512 digest and</b><br>
-<b>your OTP secrets is encrypted based on your master password, a random 16byte iv and sha256 digest</b><br>
-<sub>and stored in your config.json using NodeJs native crypto methods.</sub>
+<b>Your master password is hashed as 512bytes based on a random 128byte salt and sha512 digest.</b><br>
+<b>Your secrets are encrypted based on your master password, a random 16byte iv and sha256 digest.</b><br>
+<sub>and stored in your config.json.</sub>
 </p>
 
 <br>
