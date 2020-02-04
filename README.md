@@ -4,8 +4,8 @@
 <br>
 
 <p align="center">
-<b>Manage HMAC-based One-time Passwords like Googles Authenticator App (F2A)</b><br>
-<sub>within the terminal of your choice.</sub>
+<b>Manage HMAC-based One-time Passwords like Googles Authenticator App (F2A).</b><br>
+<sub>within the terminal of your choice</sub>
 </p>
 
 <br>
@@ -19,7 +19,7 @@
 <p align="center">
 <b>Your master password is hashed as 512bytes based on a random 128byte salt and sha512 digest.</b><br>
 <b>Your secrets are encrypted based on your master password, a random 16byte iv and sha256 digest.</b><br>
-<sub>and stored in your config.json.</sub>
+<sub>and stored in your config.json</sub>
 </p>
 
 <br>
