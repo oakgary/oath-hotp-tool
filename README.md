@@ -1,8 +1,12 @@
-# oath-hotp-tool
+<h1 align="center">oath-hotp-tool</h1>
 
-Manage HMAC-based One-time Passwords like Googles Authenticator App (F2A) but within the terminal of your choice.
+<p align="center">
+<b>SManage HMAC-based One-time Passwords like Googles Authenticator App (F2A) but within the terminal of your choice.</b><br>
+</p>
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/oakgary/oath-hotp-tool/master/media/introduction.gif" alt="Introduction" width="750"><br>
+</p>
 
 ## Setup
 
