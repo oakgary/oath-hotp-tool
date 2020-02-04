@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "clipboardy": "^2.1.0",
+    "enquirer": "^2.3.4",
+    "hi-base32": "^0.5.0"
+  }
+}

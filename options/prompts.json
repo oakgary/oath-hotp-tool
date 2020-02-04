@@ -1,0 +1,32 @@
+{
+  "getProvider": {
+    "type": "select",
+    "name": "provider",
+    "message": "Pick a provider"
+  },
+  "putProvider": {
+    "type": "input",
+    "name": "provider",
+    "message": "Enter provider name: "
+  },
+  "options": {
+    "type": "select",
+    "name": "option",
+    "message": "Pick option"
+  },
+  "updatePassword": {
+    "type": "invisible",
+    "name": "password",
+    "message": "Enter new master password: "
+  },
+  "enterPassword": {
+    "type": "invisible",
+    "name": "password",
+    "message": "Enter master password: "
+  },
+  "enterSecret": {
+    "type": "invisible",
+    "name": "secret",
+    "message": "Enter otp secret: "
+  }
+}
