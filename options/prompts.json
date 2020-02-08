@@ -28,5 +28,10 @@
     "type": "invisible",
     "name": "secret",
     "message": "Enter otp secret: "
+  },
+  "confirmSecretExport": {
+    "type": "confirm",
+    "name": "confirm",
+    "message": "Export secrets as plaintext?"
   }
 }
