@@ -10,7 +10,7 @@ module.exports = async (password) => {
   do {
     name = (await prompt(prompts.putProvider)).provider
     if ((config.otps || []).map(h => h.name).includes(name)) {
-      console.log(`OTP with name "${name}" already exists!`)
+      console.log('\x1b[31m', `OTP with name "${name}" already exists!`)
       name = null;
     }
   } while (!name)
@@ -19,7 +19,7 @@ module.exports = async (password) => {
   do {
     ({ secret } = await prompt(prompts.enterSecret));
     if (!isValidSecret(secret)) {
-      console.log('Entered invalid secret!');
+      console.log('\x1b[31m', 'Entered invalid secret!');
       secret = null;
     }
   } while (!secret)
@@ -34,5 +34,5 @@ module.exports = async (password) => {
     },
   };
   fs.writeFileSync('config.json', JSON.stringify(updatedConfig, null, 2), 'utf8');
-  console.log(`OTP for "${name}" has been added to your list!`)
+  console.log('\x1b[32m', `OTP for "${name}" has been added to your list!`)
 };

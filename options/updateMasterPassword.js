@@ -17,6 +17,6 @@ module.exports = async (oldPassword) => {
     },
   };
   fs.writeFileSync('config.json', JSON.stringify(updatedConfig, null, 2), 'utf8');
-  console.log('Master password has been updated!');
+  console.log('\x1b[32m', 'Your master password has been updated!');
   return newPassword;
 };

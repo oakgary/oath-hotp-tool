@@ -5,7 +5,7 @@ const { readConfig } = require('../utilities')
 
 module.exports = async () => {
   const config = readConfig();
-  if (!config.otps || config.otps.length === 0) { console.log('No OTPs added!'); return; }
+  if (!config.otps || config.otps.length === 0) { console.log('\x1b[31m', 'You haven\'t added any OTPs yet!'); return; }
   const { provider } = await prompt({ ...prompts.getProvider, ...{ choices: config.otps.map((c) => c.name) } });
  
   const updatedConfig = {
@@ -16,5 +16,5 @@ module.exports = async () => {
   };
 
   fs.writeFileSync('config.json', JSON.stringify(updatedConfig, null, 2), 'utf8');
-  console.log(`"${provider}" has been deleted from your list!`)
+  console.log('\x1b[32m', `"${provider}" has been deleted from your list!`)
 }
